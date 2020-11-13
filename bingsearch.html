@@ -1,0 +1,13 @@
+<html on_mouse_down="return false">
+	<input placeholder="search" id="val">
+	<button onclick="search()">Search</button>
+	<div id="res">
+	</div>
+	<script>
+		function search(){
+			value=document.getElementById("val").value;
+			result=document.getElementById("res");
+			result.innerHTML="<img onmousedown='document.getElementById(\"res\").innerHTML=\"No copy here\";' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict'>";
+		}
+	</script>
+</html>
