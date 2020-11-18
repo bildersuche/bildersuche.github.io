@@ -33,16 +33,12 @@
 			value=document.getElementById("val").value;
 			result=document.getElementById("res");
 			if (num==0){
+				window.open("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict")
 				navigator.clipboard.writeText("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict")
 			}
 			else{
-				navigator.clipboard.writeText("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-"+(num-1)+"&rs=1&adlt=strict")
-			}
-			if (num==0){
-				window.open("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict")
-			}
-			else{
 				window.open("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-"+(num-1)+"&rs=1&adlt=strict")
+				navigator.clipboard.writeText("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-"+(num-1)+"&rs=1&adlt=strict")
 			}
 		}
 	</script>
