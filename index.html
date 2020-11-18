@@ -18,7 +18,7 @@
 			value=document.getElementById("val").value;
 			result=document.getElementById("res");
 			result.innerHTML="<img onmousedown='copyit(0)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict'>";
-			result.innerHTML+="<img onmousedown='copyit(1)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-0&rs=1&adlt=strict'>";
+			result.innerHTML+="<img onmousedown='copyit(1)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-1&rs=1&adlt=strict'>";
 			result.innerHTML+="<img onmousedown='copyit(2)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-1&rs=1&adlt=strict'>";
 			result.innerHTML+="<img onmousedown='copyit(3)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-2&rs=1&adlt=strict'>";
 			result.innerHTML+="<img onmousedown='copyit(4)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-3&rs=1&adlt=strict'>";
@@ -28,6 +28,15 @@
 			result.innerHTML+="<img onmousedown='copyit(8)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-7&rs=1&adlt=strict'>";
 			result.innerHTML+="<img onmousedown='copyit(9)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-8&rs=1&adlt=strict'>";
 			result.innerHTML+="<img onmousedown='copyit(10)' src='https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-9&rs=1&adlt=strict'>";
+		}
+		function copyit(num){
+			value=document.getElementById("val").value;
+			if (num==0){
+				navigator.clipboard.write("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"&rs=1&adlt=strict")
+			}
+			else{
+				navigator.clipboard.write("https://th.bing.com/th/id/OIP.lVGMMepXbOaen9R7b_XBbQHaE8?pid=Api&q="+value+"-"+(num-1)+"&rs=1&adlt=strict")
+			}
 		}
 	</script>
 </html>
